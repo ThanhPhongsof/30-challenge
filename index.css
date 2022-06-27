@@ -1,0 +1,10 @@
+:root {
+  --primary: #de4b3e;
+  --secondary: #c74237;
+  --thirty: #c4cef7;
+  --fourty: #6a5af9;
+}
+
+body {
+  background-image: linear-gradient(to right, var(--thirty), var(--fourty));
+}
