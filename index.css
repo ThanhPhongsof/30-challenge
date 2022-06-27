@@ -1,10 +1,11 @@
 :root {
-  --primary: #de4b3e;
-  --secondary: #c74237;
-  --thirty: #c4cef7;
-  --fourty: #6a5af9;
+  --primary: #75b7ee;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #272d40;
+  --white: #fff;
 }
 
 body {
-  background-image: linear-gradient(to right, var(--thirty), var(--fourty));
+  background-image: linear-gradient(to left, var(--thirty), var(--fourty));
 }

@@ -172,6 +172,7 @@ img {
   max-width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  cursor: zoom-in;
 }
 
 body {
@@ -190,8 +191,4 @@ button {
 
 button {
   cursor: pointer;
-}
-
-img {
-  cursor: zoom-in;
 }
