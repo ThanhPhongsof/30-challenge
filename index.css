@@ -6,8 +6,11 @@
   --white: #fff;
   --green: #07a787;
 }
-/* background-image: linear-gradient(45deg, var(--thirty), var(--fourty)); */
 
 body {
-  background-color: #dadada;
+  background-image: linear-gradient(45deg, var(--thirty), var(--fourty));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
