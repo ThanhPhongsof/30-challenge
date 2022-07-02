@@ -1,0 +1,79 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --green: #07a787;
+}
+
+body {
+  background-image: linear-gradient(45deg, var(--thirty), var(--fourty));
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.alert {
+  font-size: 40px;
+  color: var(--thirty);
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+
+.hide {
+  display: none;
+}
+
+.box .result {
+  width: 250px;
+  height: 250px;
+  border: 7px solid var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 60px;
+  transition: all 2s;
+  animation: spin 2s linear infinite forwards;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card p {
+  padding: 10px;
+  text-align: center;
+  color: var(--dark);
+}
+
+.card p:first-child {
+  background-color: #a0b3f8;
+  color: var(--white);
+  font-size: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
