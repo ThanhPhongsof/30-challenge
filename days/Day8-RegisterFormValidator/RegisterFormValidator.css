@@ -1,0 +1,146 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --green: #07a787;
+}
+
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  color: #333;
+  font-size: 1.6rem;
+}
+
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  line-height: 1;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-image: linear-gradient(45deg, var(--thirty), var(--fourty));
+  color: var(--white);
+  color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #adadad;
+}
+
+.form-control span {
+  position: absolute;
+  border-bottom: 2px solid var(--green);
+  top: 38px;
+  left: 0;
+  width: 100%;
+  transition: all 0.25s linear;
+}
+
+.form-control input:focus ~ span {
+  width: 100%;
+}
+
+.form-control.error small {
+  color: var(--primary);
+}
+
+.btn-submit {
+  width: 100%;
+  height: 50%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 25px 0;
+  cursor: pointer;
+}
+
+.signup-link {
+  text-align: center;
+}
+
+.signup-link a {
+  color: var(--green);
+  text-decoration: none;
+  cursor: pointer;
+}
