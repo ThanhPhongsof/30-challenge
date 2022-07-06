@@ -1,0 +1,116 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --green: #07a787;
+}
+
+body {
+  /* background-image: linear-gradient(45deg, var(--thirty), var(--fourty)); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(/img/cold.png) no-repeat center/cover;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#weather {
+  width: 450px;
+  height: 650px;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.hot {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(/img/hot.png) no-repeat center/cover;
+}
+
+.hot #weather {
+  background: url(/img/hot.png) no-repeat center/cover;
+}
+
+.cool {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(/img/cold.png) no-repeat center/cover;
+}
+
+.cool #weather {
+  background: url(/img/cold.png) no-repeat center/cover;
+}
+
+.search {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 15px 0 15px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s linear;
+  font-size: 19px;
+}
+
+.search:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px 0 15px 0;
+}
+
+.content {
+  transition: all 0.5s linear;
+}
+
+.content,
+.time {
+  text-align: center;
+  color: #fff;
+  margin: 40px 0;
+  font-size: 15px;
+}
+
+.capital {
+  text-shadow: 4px 4px rbga(0, 0, 0, 0.5);
+}
+
+.temperature {
+  font-size: 65px;
+  font-weight: 600;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 10px;
+  margin: 0 30px;
+  padding: 20px;
+}
+
+.short-desc {
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin: 30px;
+}
+
+.more-desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-desc div {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.more-desc div i {
+  margin: 10px 0;
+}
+
+.content.hide {
+  visibility: hidden;
+  opacity: 0;
+}
