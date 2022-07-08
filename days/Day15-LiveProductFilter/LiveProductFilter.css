@@ -1,0 +1,95 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --green: #07a787;
+}
+
+body {
+  background-image: linear-gradient(to bottom, var(--thirty), var(--fourty));
+  color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 20px;
+  font-weight: 600;
+}
+
+.container {
+  width: 500px;
+  height: 600px;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  padding: 10px 20px;
+  overflow-y: scroll;
+}
+
+.search {
+  border: 1px solid var(--dark);
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.search input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.search i {
+  color: #333;
+  padding: 5px;
+}
+
+.product {
+  display: flex;
+  height: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.product img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.product .info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product .name,
+.product .price {
+  font-size: 20px;
+  text-align: center;
+}
+
+.product .name {
+  font-weight: 600;
+}
+
+.product:hover {
+  background-color: #dadada;
+}
+
+.hide {
+  display: none;
+}
