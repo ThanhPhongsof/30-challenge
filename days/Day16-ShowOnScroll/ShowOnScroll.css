@@ -1,0 +1,101 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --greenLight: #07a787;
+  --green: #3d8880;
+}
+
+body {
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+}
+
+#home {
+  background: linear-gradient(to right, var(--greenLight), var(--green));
+  color: #fff;
+  padding: 100px;
+}
+
+#home h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#home description {
+  font-size: 20px;
+}
+
+#about {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.box {
+  background: var(--dark);
+  color: var(--white);
+  padding: 20px;
+  margin: 40px 20px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.box .title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#team {
+  background: linear-gradient(180deg, var(--greenLight) 50%, var(--white) 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member {
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.member .name {
+  color: #017c2c;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.left-to-right {
+  transform: translateX(-200%);
+  transition: all 1s linear;
+}
+
+.left-to-right.start {
+  transform: translateX(0);
+}
+
+.right-to-left {
+  transform: translateX(200%);
+  transition: 1s;
+}
+
+.right-to-left.start {
+  transform: translateX(0);
+}
+
+.zoom {
+  transform: scale(0);
+  transition: all 1s linear;
+}
+
+.zoom.start {
+  transform: scale(1);
+}
