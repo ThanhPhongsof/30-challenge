@@ -1,0 +1,33 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --greenLight: #07a787;
+  --green: #3d8880;
+}
+
+body {
+  background-image: linear-gradient(to bottom, var(--thirty), var(--fourty));
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.counter {
+  background-color: var(--green);
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.counter h1 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}

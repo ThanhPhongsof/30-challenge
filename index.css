@@ -10,7 +10,7 @@
 
 body {
   background-image: linear-gradient(to bottom, var(--thirty), var(--fourty));
-  color: var(--dark);
+  color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
