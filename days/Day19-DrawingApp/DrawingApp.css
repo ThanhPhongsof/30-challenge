@@ -1,0 +1,45 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --greenLight: #07a787;
+  --green: #3d8880;
+}
+
+body {
+  height: 100vh;
+}
+
+.tool {
+  background-color: var(--thirty);
+  display: flex;
+  align-items: center;
+}
+
+.tool > * {
+  height: 40px;
+  width: 40px;
+  background-color: var(--white);
+  margin: 5px;
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#save {
+  margin-left: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  border: 1px solid var(--dark);
+  margin: 0 auto;
+}
