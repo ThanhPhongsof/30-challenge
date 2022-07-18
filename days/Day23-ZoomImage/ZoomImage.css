@@ -1,0 +1,44 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --greenLight: #07a787;
+  --green: #3d8880;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.zoom-image {
+  position: relative;
+  display: flex;
+}
+
+.zoom-image .image {
+  width: 500px;
+  margin: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: none;
+}
+
+.result {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
