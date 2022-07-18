@@ -9,10 +9,4 @@
 }
 
 body {
-  background-image: linear-gradient(120deg, var(--thirty), var(--fourty));
-  color: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
