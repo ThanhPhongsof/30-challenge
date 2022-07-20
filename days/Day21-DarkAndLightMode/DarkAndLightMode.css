@@ -1,0 +1,122 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --greenLight: #07a787;
+  --green: #3d8880;
+  --gray: #c5c5c5;
+  --grayDark: #3b3a3b;
+}
+
+body {
+  --primary-color: var(--thirty);
+  --background-color: var(--white);
+  --box-color: var(--gray);
+  --text-color: var(--dark);
+
+  background-color: var(--background-color);
+  transition:all 0.25s linear;
+}
+
+body.dark {
+  --primary-color: var(--greenLight);
+  --background-color: var(--dark);
+  --box-color: var(--grayDark);
+  --text-color: var(--white);
+
+  background-color: var(--background-color);
+  transition:all 0.25s linear;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.header-switch {
+  position: relative;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--gray);
+  border-radius: 100px;
+  transition: background-color 0.25s linear;
+}
+
+.header-switch:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--white);
+  top: 5px;
+  left: 5px;
+  transition: background-color 0.25s linear, transform 0.25s linear;
+}
+
+.header-switch-input {
+  display: none;
+}
+
+.header-switch-input:checked + .header-switch {
+  background-color: var(--primary-color);
+}
+
+.header-switch-input:checked + .header-switch:after {
+  transform: translateX(70px);
+}
+
+.container {
+  width: 1200px;
+  margin: 100px auto;
+}
+
+.heading {
+  color: var(--primary-color);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content {
+  background-color: var(--box-color);
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.description {
+  color:var(--text-color);
+}
+
+.socials{
+  margin-top:40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+}
+
+.social-link{
+  color:var(--white);
+  background-color:var(--primary-color);
+  text-decoration:none;
+  padding:10px 20px;
+  border-radius:10px;
+}
+
+.

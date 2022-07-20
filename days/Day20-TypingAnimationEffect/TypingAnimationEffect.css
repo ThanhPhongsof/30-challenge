@@ -1,0 +1,42 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --greenLight: #07a787;
+  --green: #3d8880;
+}
+
+body {
+  background-image: linear-gradient(120deg, var(--thirty), var(--fourty));
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p {
+  color: var(--greenLight);
+  font-size: 48px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: 0 0 100px var(--greenLight);
+  animation: typing 5s steps(20) infinite;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
