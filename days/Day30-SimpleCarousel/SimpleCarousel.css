@@ -1,0 +1,45 @@
+:root {
+  --primary: #eb4174;
+  --thirty: #a0b3f8;
+  --fourty: #b5f0f0;
+  --dark: #242628;
+  --white: #fff;
+  --greenLight: #07a787;
+  --green: #3d8880;
+}
+
+body {
+  background-image: linear-gradient(145deg, var(--thirty), var(--fourty));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper {
+  margin: 0 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  border: 2px solid #dadada;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: var(--white);
+  background-color: var(--greenLight);
+  margin: 0 10px;
+  border-radius: 16px;
+}
