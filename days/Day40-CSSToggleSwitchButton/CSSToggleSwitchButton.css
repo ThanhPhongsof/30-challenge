@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e8e8e8;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  transition: all 0.5s linear;
+}
+
+.circle {
+  position: absolute;
+  right: 49.8vw;
+  width: 85px;
+  height: 85px;
+  background-color: #ccc;
+  border-radius: 90px;
+  transition: all 0.5s linear;
+  transform-origin: 105% 50%;
+  pointer-events: none;
+}
+
+input:checked + label {
+  transform: rotate(180deg);
+}
+
+input:checked ~ .circle {
+  transform: rotate(-180deg);
+  background: #a0b3f8;
+}
+
+input:checked ~ .background {
+  background: #a0b3f8;
+}
