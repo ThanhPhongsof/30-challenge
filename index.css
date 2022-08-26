@@ -1,10 +1,7 @@
-:root {
-  --primary: #997771;
-  --secondary: #ff5c8a;
-  --third: #f8f9fa;
-}
-
 body {
-  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e8e8e8;
 }
-
