@@ -3,3 +3,8 @@
   --secondary: #ff5c8a;
   --third: #f8f9fa;
 }
+
+body {
+  background-color: #000;
+}
+

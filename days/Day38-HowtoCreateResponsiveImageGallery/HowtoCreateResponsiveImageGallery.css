@@ -1,0 +1,14 @@
+:root {
+  --primary: #997771;
+  --secondary: #ff5c8a;
+  --third: #f8f9fa;
+}
+
+body {
+  background-color: #000;
+}
+
+.photo-grid-container {
+  column-count: 5;
+  column-width: 300px;
+}
