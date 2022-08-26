@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;family=Montserrat:wght@400;500;700&amp;family=Poppins:wght@400;500;600;700&amp;family=Roboto:wght@300&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container a-container" id="a-container">
+        <form action="" id="a-form">
+          <h2 class="title">Create Account</h2>
+          <div class="form-icons">
+            <img src="/svg/fb.svg" alt="" class="form-icon" />
+            <img src="/svg/linkedin.svg" alt="" class="form-icon" />
+            <img src="/svg/twitter.svg" alt="" class="form-icon" />
+          </div>
+          <div class="span form-span">or user email for registration</div>
+          <input type="text" class="form-input" placeholder="Name" />
+          <input type="text" class="form-input" placeholder="Email" />
+          <input type="text" class="form-input" placeholder="Password" />
+          <button class="submit">Sign Up</button>
+        </form>
+      </div>
+      <div class="container b-container" id="b-container">
+        <form action="" id="b-form">
+          <h2 class="title">Sign in to Website</h2>
+          <div class="form-icons">
+            <img src="/svg/fb.svg" alt="" class="form-icon" />
+            <img src="/svg/linkedin.svg" alt="" class="form-icon" />
+            <img src="/svg/twitter.svg" alt="" class="form-icon" />
+          </div>
+          <div class="span form-span">or user email account</div>
+          <input type="text" class="form-input" placeholder="Name" />
+          <input type="text" class="form-input" placeholder="Email" />
+          <a class="form-link">Forgot your password</a>
+          <button class="submit">Sign Up</button>
+        </form>
+      </div>
+      <div class="switch" id="switch-cnt">
+        <div class="switch-circle"></div>
+        <div class="switch-circle switch-circle--t"></div>
+        <div class="switch-container" id="switch-c1">
+          <h2 class="title">Welcome Back !</h2>
+          <p class="description">
+            To keep connected with us please login with your personal info
+          </p>
+          <button class="switch-button switch-btn">Sign In</button>
+        </div>
+        <div class="switch-container is-hidden" id="switch-c2">
+          <h2 class="switch-title title">Hello Friend !</h2>
+          <p class="description">
+            Enter your personal details and start your journey with us
+          </p>
+          <button class="switch-button switch-btn">Sign Up</button>
+        </div>
+      </div>
+    </main>
+    <script src="/days/Day42-CSSNeumorphismLogin&SignUp/CSSNeumorphismLogin&SignUp.js"></script>
+  </body>
+</html>
