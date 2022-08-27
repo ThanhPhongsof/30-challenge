@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;family=Montserrat:wght@700&amp;family=Poppins:wght@400;500;600;700&amp;family=Roboto:wght@300&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Our Pricing</h1>
+      <div class="toggle">
+        <label>Annually</label>
+        <div class="toggle-btn">
+          <input type="checkbox" id="checkbox" class="checkbox" />
+          <label for="checkbox" id="sub" class="sub">
+            <div class="circle"></div>
+          </label>
+        </div>
+        <label>Monthly</label>
+      </div>
+    </header>
+    <div class="cards">
+      <div class="card shadow">
+        <ul>
+          <li class="pack">Basic</li>
+          <li class="price bottom-bar" id="basic">&dollar;199.99</li>
+          <li class="bottom-bar">500GB Storage</li>
+          <li class="bottom-bar">2 Users Allowed</li>
+          <li class="bottom-bar">Send up to 3GB</li>
+          <li><button class="btn">Learn More</button></li>
+        </ul>
+      </div>
+      <div class="card active">
+        <ul>
+          <li class="pack">Professional</li>
+          <li class="price bottom-bar" id="professional">&dollar;249.99</li>
+          <li class="bottom-bar">1TB Storage</li>
+          <li class="bottom-bar">5 Users Allowed</li>
+          <li class="bottom-bar">Send up to 10GB</li>
+          <li><button class="btn active-btn">Learn More</button></li>
+        </ul>
+      </div>
+      <div class="card shadow">
+        <ul>
+          <li class="pack">Master</li>
+          <li class="price bottom-bar" id="master">&dollar;399.99</li>
+          <li class="bottom-bar">2TB Storage</li>
+          <li class="bottom-bar">10 Users Allowed</li>
+          <li class="bottom-bar">Send up to 20GB</li>
+          <li><button class="btn">Learn More</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="/days/Day44-ResponsivePricingCards/ResponsivePricingCards.js"></script>
+  </body>
+</html>
