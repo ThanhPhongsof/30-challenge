@@ -13,11 +13,9 @@ html {
 body {
   background-color: #f7f7f7;
   font-family: "Montserrat", sans-serif;
-  width: 80%;
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   overflow-x: scroll;
+  height: 100vh;
 }
