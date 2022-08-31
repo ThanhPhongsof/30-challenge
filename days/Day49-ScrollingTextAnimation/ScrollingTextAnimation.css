@@ -1,0 +1,60 @@
+:root {
+  --white: #e9e9e9;
+  --gray: #333;
+}
+/* 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #111;
+  overflow: hidden;
+} */
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+section div {
+  position: relative;
+  width: 50%;
+  background-color: #20506b;
+  overflow: hidden;
+}
+section div:first-child {
+  position: relative;
+  width: 50%;
+  background-image: url("/img/drinks2.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+section div:first-child h2 {
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-fill-color: transparent;
+  left: 100%;
+}
+
+section div h2 {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 12em;
+  line-height: 100vh;
+  color: #fff;
+  animation: animate 60s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
