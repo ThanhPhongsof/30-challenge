@@ -1,0 +1,116 @@
+:root {
+  --white: #e9e9e9;
+  --gray: #333;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #c8c8c8;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.container .box {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container .shadow1 {
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container .shadow2::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+  width: 90%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  transform-origin: left;
+  transform: skewY(5deg);
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.container .shadow3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  transform-origin: right;
+  transform: skewY(-8deg);
+  z-index: -1;
+  filter: blur(10px);
+}
+.container .shadow3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  transform-origin: left;
+  transform: skewY(8deg);
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.container .shadow4::before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -5%;
+  width: 90%;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.container .shadow5::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.container .shadow6 {
+  background-color: #c8c8c8;
+  border-radius: 15px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.container .shadow7 {
+  background-color: #c8c8c8;
+  border-radius: 15px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
