@@ -1,0 +1,29 @@
+:root {
+  --white: #e9e9e9;
+  --gray: #333;
+  --darkBlue: #091921;
+}
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--darkBlue);
+} */
+body {
+  overflow: hidden;
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--darkBlue);
+}
+
+section span {
+  position: absolute;
+  background-color: #fff;
+  pointer-events: none;
+  border-radius: 50%;
+  background-size: cover;
+}
