@@ -1,0 +1,30 @@
+:root {
+  --white: #e9e9e9;
+  --gray: #333;
+  --darkBlue: #091921;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 1500vh;
+  background-color: var(--darkBlue);
+}
+
+.banner {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
