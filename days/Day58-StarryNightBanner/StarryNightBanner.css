@@ -1,0 +1,179 @@
+:root {
+  --white: #e9e9e9;
+  --gray: #333;
+  --darkBlue: #091921;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--darkBlue);
+} */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #111425 0%, #3751e0);
+  background-attachment: fixed;
+  overflow: hidden;
+  transition: all 5s ease-in-out;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  transition: 0.5s;
+  background-image: linear-gradient(transparent, #fff, #2598f3);
+}
+.container.active {
+  background: linear-gradient(180deg, #ffeb3b 0%, #ff9800 100%);
+  transition: all 5s ease-in-out;
+}
+
+.container.active::before {
+  bottom: 0;
+}
+
+.bg {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  transition: 0.5s;
+  z-index: 1000;
+  transform: translateY(100%);
+}
+.container.active .bg {
+  transform: translateY(0);
+}
+
+.moon {
+  position: absolute;
+  top: 140px;
+  left: 400px;
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.container.active .moon {
+  left: 350px;
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 0 40px rgba(255, 255, 255, 0.5), 0 0 0 80px rgba(255, 255, 255, 0.5),
+    0 0 0 120px rgba(255, 255, 255, 0.3), 0 0 0 180px rgba(255, 255, 255, 0.2),
+    0 0 0 240px rgba(255, 255, 255, 0.2), 0 0 0 300px rgba(255, 255, 255, 0.1);
+}
+
+.moon::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #111425 0%, #3751e0);
+  background-attachment: fixed;
+}
+.container.active .moon::before {
+  opacity: 0;
+}
+
+.forest {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(1.2);
+  transition: 0.5s;
+  z-index: 100;
+}
+.container.active .forest {
+  bottom: -100%;
+}
+
+.container i {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  animation: star linear infinite;
+}
+.container.active i {
+  background: none;
+}
+
+.cloud {
+  position: absolute;
+  max-width: 600px;
+  left: 0;
+  z-index: 100000;
+}
+.cloud1 {
+  animation: cloud 50s linear infinite;
+}
+.cloud2 {
+  animation: cloud 35s linear infinite;
+}
+.cloud4 {
+  max-width: 200px;
+  top: 200px;
+  animation: cloud 70s linear infinite;
+  animation-delay: -20s;
+}
+.cloud5 {
+  max-width: 500px;
+  top: 150px;
+  animation: cloud 40s linear infinite;
+  animation-delay: -5s;
+}
+.cloud6 {
+  max-width: 400px;
+  top: 75px;
+  animation: cloud 30s linear infinite;
+  animation-delay: -10s;
+}
+
+img {
+  pointer-events: none;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(-100%) scale(1);
+  }
+  100% {
+    transform: translateX(400%) scale(1.5);
+  }
+}
+
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
